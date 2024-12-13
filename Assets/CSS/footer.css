@@ -1,0 +1,111 @@
+/* Footer */
+.footer {
+    background-color: #2c3e50; /* Matching background color */
+    color: #ecf0f1; /* Matching font color */
+    padding: 40px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .footer__container {
+    max-width: 968px;
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+    row-gap: 2rem;
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .footer__title {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #ecf0f1; /* Matching title color */
+  }
+  
+  .footer__link {
+    text-decoration: none;
+    color: #ecf0f1; /* Matching link color */
+    font-size: 0.813rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__links {
+    list-style: none;
+    display: grid;
+    row-gap: 0.5rem;
+  }
+  
+  .footer__link:hover {
+    text-decoration: underline;
+    color: #3498db; /* Hover effect color */
+  }
+  
+  .footer__social {
+    display: flex;
+    column-gap: 1.5rem;
+  }
+  
+  .footer__social-link {
+    color: #ecf0f1; /* Matching social icon color */
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__social-link:hover {
+    color: #3498db; /* Hover effect for social icons */
+  }
+  
+  .footer__copy {
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #ecf0f1; /* Matching text color */
+  }
+  .footer .footer__nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+  
+  @media screen and (max-width: 360px) {
+    .footer {
+      padding: 3.5rem 0 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 576px) {
+    .footer__container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 767px) {
+    .footer {
+      margin: 0;
+      padding: 6rem 0 2rem;
+    }
+  }
+  
+  @media screen and (min-width: 968px) {
+    .footer__container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .footer__social {
+      align-items: flex-start;
+    }
+    .footer__social-link {
+      font-size: 1.45rem;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .footer__container {
+      margin-left: auto;
+      margin-right: auto;
+      column-gap: 3rem;
+    }
+  }
